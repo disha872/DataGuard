@@ -40,7 +40,7 @@ if uploaded_file is not None:
         with st.spinner("Analyzing data quality..."):
             import requests
 
-            API_URL = "http://127.0.0.1:8000/analyze"
+            API_URL = "https://dataguard-backend.onrender.com/analyze"
 
             response = requests.post(
             API_URL,
